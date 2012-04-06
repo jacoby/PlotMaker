@@ -1,0 +1,15 @@
+I have been unsatisfied with previous means to run R from Perl,
+and this is the beginnings of my attempt to rectify the issue.
+
+Generally, you develop a template for your R, designate a temp
+directory and file name for R code, and a hashref full of the 
+data your R code will use. This module takes the data and template,
+writes the R, then runs it. 
+
+Because of how R works, we'd have to parse the .Rout file to see
+if the R program worked. I don't currently do that. It is a place
+where this module could do that. It probably should do that. It 
+does not currently do that. I blame myself.
+
+I would be more than willing to rectify this. 
+
